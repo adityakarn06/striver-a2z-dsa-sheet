@@ -1,0 +1,39 @@
+to directly compile a cpp file: clang++ main.cpp -o out
+to directly run a cpp file: ./out
+
+To SETUP VS code for DSA and CP:-
+CREATE 3 files: input.txt, output.txt & main.cpp
+
+FOR LAYOUT: view > editor layout > split right
+
+FOR TASKS.JSON: terminal > configure task > create > others
+then paste this: 
+    {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "compile",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-std=c++17",
+          "-o",
+          "${fileBasenameNoExtension}",
+          "${file}"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": false
+        }
+      },
+      {
+        "label": "compile and run",
+        "type": "shell",
+        "command": "g++ -std=c++17 -o ${fileBasenameNoExtension} ${file} && ./${fileBasenameNoExtension} < input.txt > output.txt",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
