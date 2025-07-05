@@ -1,0 +1,2 @@
+Value inside fn:101
+Value inside main:101

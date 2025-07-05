@@ -1,14 +1,4 @@
-to directly compile a cpp file: clang++ main.cpp -o out
-to directly run a cpp file: ./out
-
-To SETUP VS code for DSA and CP:-
-CREATE 3 files: input.txt, output.txt & main.cpp
-
-FOR LAYOUT: view > editor layout > split right
-
-FOR TASKS.JSON: terminal > configure task > create > others
-then paste this: 
-    {
+{
     "version": "2.0.0",
     "tasks": [
       {
@@ -37,6 +27,3 @@ then paste this:
       }
     ]
   }
-
-
-TO BUILD AND RUN THIS FILE: (cmd+shift+B)

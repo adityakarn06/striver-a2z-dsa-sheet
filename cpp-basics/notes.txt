@@ -1,0 +1,21 @@
+instead of #include<iostream>, 
+    we can use #include <bits/stdc++.h> also, to get all the lib at once. It's a shortcut that includes a vast number of standard C++ libraries, making it easier to access a wide range of functions and classes without specifying each library individually.
+
+Range of values of integer DataTypes:
+1. Int (4 bytes) -> (-10^9 to 10^9)
+2. long  -> (-10^12 to 10^12)
+3. long long -> (-10^18 to 10^18)
+
+Similarly, to store decimal numbers: float < double 
+< long double
+
+ARRAY:
+- stores homogenous DataTypes
+- starts from 0 index
+- each index value cn be modified
+- elements are stored in consecutive memory address
+
+FUNCTION:
+- used to modularize code
+- increases readability
+- to use same code multiple times
